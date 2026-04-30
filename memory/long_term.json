@@ -1,0 +1,52 @@
+{
+  "identity": {
+    "name": {
+      "value": "Ahmed Gweily",
+      "updated": "2026-04-30"
+    },
+    "study_field": {
+      "value": "Electrical Engineering",
+      "updated": "2026-04-30"
+    },
+    "university": {
+      "value": "Mansoura University",
+      "updated": "2026-04-30"
+    },
+    "academic_year": {
+      "value": "Last year (graduation)",
+      "updated": "2026-04-30"
+    },
+    "job": {
+      "value": "Computer Vision Engineer",
+      "updated": "2026-04-30"
+    }
+  },
+  "preferences": {
+    "language": {
+      "value": "English",
+      "updated": "2026-04-30"
+    },
+    "preferred_address": {
+      "value": "sir",
+      "updated": "2026-04-30"
+    }
+  },
+  "projects": {
+    "Jarvis_development": {
+      "value": "developing/debugging a personal assistant application named Jarvis",
+      "updated": "2026-04-30"
+    }
+  },
+  "relationships": {},
+  "wishes": {},
+  "notes": {
+    "personal_sentiment": {
+      "value": "It is hard to hide longing, it has been years",
+      "updated": "2026-04-30"
+    },
+    "keyboard_lighting_shortcut": {
+      "value": "Fn+F2",
+      "updated": "2026-04-30"
+    }
+  }
+}

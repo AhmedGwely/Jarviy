@@ -1,0 +1,18 @@
+# Virtual environments
+venv/
+.venv/
+jarvis/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Env files
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
