@@ -103,3 +103,53 @@
 [2026-05-01 11:06:32] Starting JARVIS (crash #0 so far)...
 [2026-05-01 11:07:02] JARVIS exited cleanly after 29s. Launcher done.
 [2026-05-01 11:07:02] Launcher exited. Total uptime: 29s, total crashes: 0
+[2026-05-01 11:38:23] ============================================================
+[2026-05-01 11:38:23] JARVIS launcher started.
+[2026-05-01 11:38:23] Python: D:\Jarvis\JARVIS\jarvis\Scripts\python.exe
+[2026-05-01 11:38:23] Entry:  D:\Jarvis\JARVIS\main.py
+[2026-05-01 11:38:23] ============================================================
+[2026-05-01 11:38:23] Starting JARVIS (crash #0 so far)...
+[2026-05-01 11:43:03] JARVIS crashed (exit code 3221225477) after 4m 40s. Crash #1 — restarting in 3s...
+[2026-05-01 11:43:06] Starting JARVIS (crash #1 so far)...
+[2026-05-01 11:44:08] JARVIS exited cleanly after 1m 1s. Launcher done.
+[2026-05-01 11:44:08] Launcher exited. Total uptime: 5m 44s, total crashes: 1
+[2026-05-01 14:02:57] ============================================================
+[2026-05-01 14:02:57] JARVIS launcher started.
+[2026-05-01 14:02:57] Python: D:\Jarvis\JARVIS\jarvis\Scripts\python.exe
+[2026-05-01 14:02:57] Entry:  D:\Jarvis\JARVIS\main.py
+[2026-05-01 14:02:57] ============================================================
+[2026-05-01 14:02:57] Starting JARVIS (crash #0 so far)...
+[2026-05-01 14:05:24] ============================================================
+[2026-05-01 14:05:24] JARVIS launcher started.
+[2026-05-01 14:05:24] Python: D:\Jarvis\JARVIS\jarvis\Scripts\python.exe
+[2026-05-01 14:05:24] Entry:  D:\Jarvis\JARVIS\main.py
+[2026-05-01 14:05:24] ============================================================
+[2026-05-01 14:05:24] Starting JARVIS (crash #0 so far)...
+[2026-05-01 14:05:32] JARVIS exited cleanly after 7s. Launcher done.
+[2026-05-01 14:05:32] Launcher exited. Total uptime: 7s, total crashes: 0
+[2026-05-01 14:05:47] JARVIS exited cleanly after 2m 49s. Launcher done.
+[2026-05-01 14:05:47] Launcher exited. Total uptime: 2m 49s, total crashes: 0
+[2026-05-01 14:07:00] ============================================================
+[2026-05-01 14:07:00] JARVIS launcher started.
+[2026-05-01 14:07:00] Python: D:\Jarvis\JARVIS\jarvis\Scripts\python.exe
+[2026-05-01 14:07:00] Entry:  D:\Jarvis\JARVIS\main.py
+[2026-05-01 14:07:00] ============================================================
+[2026-05-01 14:07:00] Starting JARVIS (crash #0 so far)...
+[2026-05-01 14:08:49] ============================================================
+[2026-05-01 14:08:49] JARVIS launcher started.
+[2026-05-01 14:08:49] Python: D:\Jarvis\JARVIS\jarvis\Scripts\python.exe
+[2026-05-01 14:08:49] Entry:  D:\Jarvis\JARVIS\main.py
+[2026-05-01 14:08:49] ============================================================
+[2026-05-01 14:08:49] Starting JARVIS (crash #0 so far)...
+[2026-05-01 14:09:13] JARVIS exited cleanly after 23s. Launcher done.
+[2026-05-01 14:09:13] Launcher exited. Total uptime: 23s, total crashes: 0
+[2026-05-01 14:10:41] ============================================================
+[2026-05-01 14:10:41] JARVIS launcher started.
+[2026-05-01 14:10:41] Python: D:\Jarvis\JARVIS\jarvis\Scripts\python.exe
+[2026-05-01 14:10:41] Entry:  D:\Jarvis\JARVIS\main.py
+[2026-05-01 14:10:41] ============================================================
+[2026-05-01 14:10:41] Starting JARVIS (crash #0 so far)...
+[2026-05-01 14:10:51] JARVIS exited cleanly after 10s. Launcher done.
+[2026-05-01 14:10:51] Launcher exited. Total uptime: 10s, total crashes: 0
+[2026-05-01 14:12:04] JARVIS exited cleanly after 5m 3s. Launcher done.
+[2026-05-01 14:12:04] Launcher exited. Total uptime: 5m 3s, total crashes: 0
