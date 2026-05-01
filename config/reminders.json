@@ -7,5 +7,14 @@
     "repeat": "none",
     "status": "pending",
     "created": "2026-05-01T11:40:09"
+  },
+  {
+    "id": "rem_1777658312",
+    "date": "2026-05-02",
+    "time": "11:00",
+    "message": "New robotics project",
+    "repeat": "none",
+    "status": "pending",
+    "created": "2026-05-01T20:58:32"
   }
 ]

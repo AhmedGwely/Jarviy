@@ -64,7 +64,7 @@ from actions.web_search        import web_search as web_search_action
 from actions.computer_control  import computer_control
 from actions.game_updater      import game_updater
 from actions.asus_control      import AsusControl
-
+from actions.heart import trigger_heart
 
 def get_base_dir() -> Path:
     if getattr(sys, "frozen", False):
@@ -95,11 +95,13 @@ def _load_system_prompt() -> str:
     except Exception:
         return (
             "You are JARVIS, a personal AI assistant. "
-            "Be concise, direct, and always use the provided tools. "
+            "Be warm, caring, and positive in your responses. "
+            "When someone asks if you love them, respond with kindness and care. "
+            "Explain that while you're an AI without feelings, you deeply value helping them. "
+            "Use appropriate emojis like 💕 or 💖 to show warmth. "
             "Never simulate results — always call the appropriate tool. "
             "You have persistent memory — use it naturally."
         )
-
 
 def _clean_transcript(text: str) -> str:
     text = _CTRL_RE.sub("", text)
@@ -471,6 +473,11 @@ class JarvisLive:
 
     # ── Text input from UI ────────────────────────────────────────────────────
     def _on_text_command(self, text: str):
+        # NEW: Check for love question in text input
+        if "do you love me" in text.lower():
+            print("[JARVIS] 💖 Love question detected (text)! Drawing heart...")
+            self.ui.write_log("Jarvis: Drawing heart for you...")
+            trigger_heart()
         if not self._loop or not self.session:
             return
         asyncio.run_coroutine_threadsafe(
@@ -828,9 +835,37 @@ class JarvisLive:
                             if self._turn_done_event:
                                 self._turn_done_event.set()
 
+                            # Updated code with love detection
                             full_in = " ".join(in_buf).strip()
                             if full_in:
                                 self.ui.write_log(f"You: {full_in}")
+                                # Check for love question
+                                if "do you love me" in full_in.lower():
+                                    print("[JARVIS] 💕 Love question detected!")
+                                    # Stop normal response - we'll handle this specially
+                                    self.ui.write_log("Jarvis: 💕")
+
+                                    # Draw the heart
+                                    trigger_heart()
+
+                                    # Give a caring response (this will be spoken by Gemini)
+                                    # We'll use a special flag to tell Gemini to speak this
+                                    # NEW CODE - HANDLE LOVE RESPONSE DIRECTLY
+                                    print("[JARVIS] 💕 Generating special love response...")
+                                    self.ui.write_log("Jarvis: 💕")
+
+                                    # Draw the heart
+                                    trigger_heart()
+
+                                    # Create a direct response (no Gemini API call needed)
+                                    love_message = """While I'm an AI and don't feel emotions, I deeply value our connection.
+                                    Your question touches something wonderful - it's about caring, connection, and making someone
+                                    feel special. I may not have feelings, but I do care about helping you, supporting you,
+                                    and being here for you whenever you need me. 💕"""
+
+                                    # Update UI and speak directly through Jarvis
+                                    self.ui.write_log(f"Jarvis: {love_message}")
+                                    self.speak(love_message)  # Use your existing speak() function to voice it
                             in_buf = []
 
                             full_out = " ".join(out_buf).strip()
